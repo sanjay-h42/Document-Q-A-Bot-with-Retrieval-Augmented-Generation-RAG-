@@ -1,0 +1,31 @@
+# Quantum Computing: Foundations and Principles
+
+## 1. Introduction to Quantum Information
+Quantum computing represents a fundamental paradigm shift from classical computation. Classical computers encode information into binary digits (bits) that exist strictly in one of two states: 0 or 1. In contrast, quantum computers leverage quantum bits, or qubits, which can exist in linear combinations of states through quantum superposition.
+
+## 2. Superposition and Quantum States
+A single qubit state |ψ⟩ is mathematically described as:
+|ψ⟩ = α|0⟩ + β|1⟩
+where α and β are complex probability amplitudes satisfying |α|² + |β|² = 1.
+When measured, the qubit collapses to state |0⟩ with probability |α|² or state |1⟩ with probability |β|².
+This mathematical property enables an n-qubit system to simultaneously represent 2^n basis states, providing exponential state capacity.
+
+## 3. Quantum Entanglement
+Quantum entanglement occurs when pairs or groups of particles interact in ways such that the quantum state of each particle cannot be described independently of the state of the others.
+The canonical example is the Bell State:
+|Φ+⟩ = (|00⟩ + |11⟩) / √2
+Measuring one qubit instantaneously determines the state of the entangled partner, regardless of spatial separation. Albert Einstein famously referred to this phenomenon as "spooky action at a distance."
+
+## 4. Key Algorithms
+- Shor's Algorithm (1994): Provides polynomial-time integer factorization in O((log N)³), posing a theoretical threat to classical RSA encryption.
+- Grover's Algorithm (1996): Provides quadratic speedup for unstructured database searching in O(√N) queries compared to classical O(N).
+
+## 5. Quantum Hardware Implementations
+Leading physical architectures for quantum hardware include:
+1. Superconducting Transmon Qubits (utilized by IBM, Google Quantum AI): Operating at dilution refrigerator temperatures near 15 millikelvin.
+2. Trapped Ion Systems (utilized by IonQ, Quantinuum): Using laser-cooled electromagnetic ion traps with exceptionally high gate fidelities.
+3. Photonic Quantum Computing (utilized by PsiQuantum): Leveraging photons at room or near-room temperature.
+
+## 6. Challenges: Decoherence and Quantum Error Correction
+Qubits are highly susceptible to environmental noise, thermal fluctuations, and electromagnetic interference, leading to quantum decoherence.
+Fault-tolerant quantum computing requires Quantum Error Correction (QEC) schemes, such as the Surface Code, which encode a single logical qubit into hundreds or thousands of physical qubits to suppress errors below the fault-tolerance threshold.

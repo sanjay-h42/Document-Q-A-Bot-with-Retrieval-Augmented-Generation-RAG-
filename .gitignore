@@ -1,0 +1,28 @@
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+backend/venv/
+backend/.env
+chroma_db/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node & Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+frontend/.env.*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+
+# System & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
